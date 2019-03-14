@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Favorite MCU Heroines!!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="icon" href="https://www.freeiconspng.com/uploads/shield-marvel-icon-5.jpg" </head>
+
+    <body>
+        <!--Main Heading-->
+        <div class="heading">
+            <h1>Favorite MCU Heroines!</h1>
+        </div>
+
+        <div class="background">
+            <div class="container">
+
+                <!--Changing Image based on correct answers-->
+                <h2>Press Any Key To Get Started!</h2>
+                <div>
+                    <img id="image" src="./assets/images/MarvelWomen.jpg" width="50%" height="500">
+                </div>
+
+                <!--Current Word Container-->
+                <div>
+                    <h3 id="currentword">_ _ _ _ _</h3>
+                </div>
+                <div id="scoreboard">
+                    <!--Guesses left Container-->
+                    <div class="sidebar">
+                        <h3>GUESSES LEFT:
+                            <span id="guessesremaining"></span>
+                        </h3>
+                    </div>
+
+                    <!--Wins counter Container-->
+                    <div class="sidebar">
+                        <h3>WINS:
+                            <span id="winstracker"></span>
+                        </h3>
+                    </div>
+                    <!--Loss counter Container-->
+                    <div class="sidebar">
+                        <h3>LOSSES:
+                            <span id="losstracker"></span>
+                        </h3>
+                    </div>
+
+                    <!--Wrong guesses container-->
+                    <div class="sidebar">
+                        <h3>LETTERS YOU GUESSED WRONG:
+                            <span id="playerguesses"></span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--AUDIO FILES-->
+        <div>
+            <!--arthur-->
+            <audio id="avengers">
+                <source src="./assets/audio/AvengersTheme.mp3" type="audio/mp3">
+            </audio>
+            <!--rugrats-->
+            <audio id="bpanther">
+                <source src="./assets/audio/BP.mp3" type="audio/mp3">
+            </audio>
+            <!--simpsons-->
+            <audio id="marvel">
+                <source src="./assets/audio/MarvelStudios.mp3" type="audio/mp3">
+            </audio>
+            <!--scoobydoo-->
+            <audio id="xmen">
+                <source src="./assets/audio/XmenTheme.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+
+
+
+        <script src="assets/javascript/game.js"></script>
+
+    </body>
+
+</html>

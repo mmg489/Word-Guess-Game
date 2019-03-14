@@ -1,0 +1,68 @@
+body {
+    background-image: url("https://cdn2us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/marvel-logo-wallpaper_1.jpg?itok=WHn5-uQP");
+    width: 100%
+}
+
+h1 {
+    font-size: 43px;
+    border: solid 5px rgb(7, 0, 0);
+    background: grey;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right:10%;
+    padding: 15px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
+img {
+    margin: 10px;
+}
+
+
+.sidebar {
+    padding: 5px;
+    position: relative;
+    border-top: solid rgb(7, 0, 0) 2px;
+    border-bottom: solid rgb(7, 0, 0) 2px;
+    margin-bottom: 5px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 12px;
+}
+
+span {
+    border: solid rgb(7, 0, 0) 2px;
+    padding-left: 3px;
+    padding-right:3px;
+    background-color: rgb(175, 11, 11); 
+    font-size: 15px;
+}
+
+.container {
+    background-color: grey;
+    margin-top: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5px;
+    text-align: center;
+    border: solid 3px red;
+}
+
+#currentword {
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#scoreboard {
+    padding: 20px;
+}
+
