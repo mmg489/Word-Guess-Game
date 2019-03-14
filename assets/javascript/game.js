@@ -64,9 +64,6 @@ var avenger = document.getElementById("avengers");
 var blackpanther = document.getElementById("bpanther");
 var marvel = document.getElementById("marvel");
 var xmen = document.getElementById("xmen");
-var spongebob = document.getElementById("spongebob");
-var danny = document.getElementById("danny");
-var teent = document.getElementById("teent");
 
 
 function aud() {
@@ -195,8 +192,9 @@ function complete() {
     } else if (guessesRemaining === 0) {
         losses++;
         reset()
-        document.getElementById("image").src = "./assets/images/try-again.png"
+        document.getElementById("image").src = "./assets/images/Snap.gif"
         document.getElementById("losstracker").innerHTML = " " + losses;
+        alert("You lose!");
     }
     //display losses on screen && guesses remaining countdown
     document.getElementById("currentword").innerHTML = "  " + blanksAndCorrect.join(" ");
