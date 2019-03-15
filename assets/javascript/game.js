@@ -6,7 +6,8 @@ var words = [
    "okoye",
     "peggycarter",
      "hopepym",
-      "sif"]
+      "sif",
+        "scarletwitch"]
 
 //Empty variables to store values later
 var randomWord = "";
@@ -19,7 +20,6 @@ var wrongGuess = [];
 var wins = 0;
 var losses = 0;
 var guessesRemaining = 9;
-
 
 
 // ALL FUNCTIONS
@@ -64,9 +64,11 @@ var avenger = document.getElementById("avengers");
 var blackpanther = document.getElementById("bpanther");
 var marvel = document.getElementById("marvel");
 var xmen = document.getElementById("xmen");
+var gtog = document.getElementById("gotg");
 
 
 function aud() {
+ 
     //Rogue Audio & Image
     //---------------------------
     if (randomWord === words[0]) {
@@ -74,6 +76,7 @@ function aud() {
         blackpanther.pause();
         marvel.pause();
         xmen.play();
+        gotg.pause();
         document.getElementById("image").src = "./assets/images/rogue.gif";
     }
     //Jean Grey Audio & Image
@@ -83,15 +86,17 @@ function aud() {
         blackpanther.pause();
         marvel.pause();
         xmen.play();
+        gotg.pause();
         document.getElementById("image").src = "./assets/images/JeanGrey.gif";
     }
     //Gamora Audio & Image
     //---------------------------
     else if (randomWord === words[2]) {
-        avenger.play();
+        avenger.pause();
         blackpanther.pause();
         marvel.pause();
         xmen.pause();
+        gotg.play();
         document.getElementById("image").src = "./assets/images/Gamora.gif";
     }
     //Okoye Audio & Image
@@ -101,6 +106,7 @@ function aud() {
         blackpanther.play();
         marvel.pause();
         xmen.pause();
+        gotg.pause();
         document.getElementById("image").src = "./assets/images/okoye.gif";
     }
     //Peggy Carter Audio & Image
@@ -110,6 +116,7 @@ function aud() {
         blackpanther.pause();
         marvel.pause();
         xmen.pause();
+        gotg.pause();
         document.getElementById("image").src = "./assets/images/AgentCarter.gif";
     }
     //Hope Pym Audio & Image
@@ -119,6 +126,7 @@ function aud() {
         blackpanther.pause();
         marvel.pause();
         xmen.pause();
+        gotg.pause();
         document.getElementById("image").src = "./assets/images/wasp.gif";
     }
     //Sif Audio & Image
@@ -128,7 +136,18 @@ function aud() {
         blackpanther.pause();
         marvel.play();
         xmen.pause();
+        gotg.pause();
         document.getElementById("image").src = "./assets/images/LadySif.gif";
+    }
+     //Scarlet Witch Audio & Image
+    //---------------------------
+    else if (randomWord === words[7]) {
+        avenger.play();
+        blackpanther.pause();
+        marvel.pause();
+        xmen.pause();
+        gotg.pause();
+        document.getElementById("image").src = "./assets/images/ScarletWitch.gif";
     }
 };
 
@@ -195,11 +214,13 @@ function complete() {
         document.getElementById("image").src = "./assets/images/Snap.gif"
         document.getElementById("losstracker").innerHTML = " " + losses;
         alert("You lose!");
+        marvel.play();
     }
     //display losses on screen && guesses remaining countdown
     document.getElementById("currentword").innerHTML = "  " + blanksAndCorrect.join(" ");
     document.getElementById("guessesremaining").innerHTML = " " + guessesRemaining;
 }
+    
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
