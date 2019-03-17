@@ -215,6 +215,10 @@ function complete() {
         document.getElementById("losstracker").innerHTML = " " + losses;
         alert("You lose!");
         marvel.play();
+        avenger.pause();
+        blackpanther.pause();
+        xmen.pause();
+        gotg.pause();
     }
     //display losses on screen && guesses remaining countdown
     document.getElementById("currentword").innerHTML = "  " + blanksAndCorrect.join(" ");
